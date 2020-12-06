@@ -1,0 +1,39 @@
+// Ozme
+@font-face {
+  font-family: "Ozme";
+  src: url("Ozme-Regular.eot");
+  src: local("Ozme Regular"), local("Ozme-Regular"),
+    url("../fonts/Ozme/Ozme-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Ozme/Ozme-Regular.woff") format("woff"),
+    url("../fonts/Ozme/Ozme-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+// PF Agora
+@font-face {
+  font-family: "PF Agora Sans Pro Light";
+  src: local("PF Agora Sans Pro Light"), local("PF-Agora-Sans-Pro-Light"),
+    url("../fonts/PF/Light/PFAgoraSansPro-Light.woff2") format("woff2"),
+    url("../fonts/PF/Light/PFAgoraSansPro-Light.woff") format("woff"),
+    url("../fonts/PF/Light/PFAgoraSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PF Agora Sans Pro Regular";
+  src: local("PF Agora Sans Pro Regular"), local("PF-Agora-Sans-Pro-Regular"),
+    url("../fonts/PF/Regular/PFAgoraSansPro-Regular.woff2") format("woff2"),
+    url("../fonts/PF/Regular/PFAgoraSansPro-Regular.woff") format("woff"),
+    url("../fonts/PF/Regular/PFAgoraSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PF Agora Sans Pro Medium";
+  src: local("PF Agora Sans Pro Medium"), local("PF-Agora-Sans-Pro-Medium"),
+    url("../fonts/PF/Medium/PFAgoraSansPro-Medium.woff2") format("woff2"),
+    url("../fonts/PF/Medium/PFAgoraSansPro-Medium.woff") format("woff"),
+    url("../fonts/PF/Medium/PFAgoraSansPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
