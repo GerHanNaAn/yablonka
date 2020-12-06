@@ -1,0 +1,407 @@
+@font-face {
+  font-family: "Ozme";
+  src: url("Ozme-Regular.eot");
+  src: local("Ozme Regular"), local("Ozme-Regular"), url("../fonts/Ozme/Ozme-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Ozme/Ozme-Regular.woff") format("woff"), url("../fonts/Ozme/Ozme-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "PF Agora Sans Pro Light";
+  src: local("PF Agora Sans Pro Light"), local("PF-Agora-Sans-Pro-Light"), url("../fonts/PF/Light/PFAgoraSansPro-Light.woff2") format("woff2"), url("../fonts/PF/Light/PFAgoraSansPro-Light.woff") format("woff"), url("../fonts/PF/Light/PFAgoraSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "PF Agora Sans Pro Regular";
+  src: local("PF Agora Sans Pro Regular"), local("PF-Agora-Sans-Pro-Regular"), url("../fonts/PF/Regular/PFAgoraSansPro-Regular.woff2") format("woff2"), url("../fonts/PF/Regular/PFAgoraSansPro-Regular.woff") format("woff"), url("../fonts/PF/Regular/PFAgoraSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "PF Agora Sans Pro Medium";
+  src: local("PF Agora Sans Pro Medium"), local("PF-Agora-Sans-Pro-Medium"), url("../fonts/PF/Medium/PFAgoraSansPro-Medium.woff2") format("woff2"), url("../fonts/PF/Medium/PFAgoraSansPro-Medium.woff") format("woff"), url("../fonts/PF/Medium/PFAgoraSansPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+*::selection {
+  color: #ffffff;
+  background: #533934;
+  box-sizing: border-box; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+body {
+  margin: 0;
+  font-family: "PF Agora Sans Pro Medium", sans-serif; }
+
+a {
+  transition: 0.3s all ease;
+  text-decoration: none; }
+  a:active {
+    color: inherit; }
+
+li {
+  list-style-type: none; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+button {
+  border: none; }
+  button:active, button:focus {
+    outline: none; }
+
+p {
+  margin: 0; }
+
+h1 {
+  margin: 0; }
+
+input:focus {
+  outline: none; }
+
+::-webkit-input-placeholder {
+  font-family: "PF Agora Sans Pro Regular";
+  font-size: 17px;
+  color: #b8b8b8; }
+
+::-moz-placeholder {
+  font-family: "PF Agora Sans Pro Regular";
+  font-size: 17px;
+  color: #b8b8b8; }
+
+:-moz-placeholder {
+  font-family: "PF Agora Sans Pro Regular";
+  font-size: 17px;
+  color: #b8b8b8; }
+
+:-ms-input-placeholder {
+  font-family: "PF Agora Sans Pro Regular";
+  font-size: 17px;
+  color: #b8b8b8; }
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .container {
+      padding: 0 5px; } }
+
+.row {
+  display: flex; }
+
+.col {
+  display: flex;
+  flex-direction: column; }
+  .col_ctr {
+    align-items: center; }
+
+.nav {
+  display: flex; }
+  .nav__item {
+    padding: 10px 13px;
+    box-sizing: border-box;
+    color: #533934;
+    border-radius: 26px;
+    cursor: pointer;
+    transition: 0.3s; }
+    .nav__item:hover {
+      background: #fff8fa; }
+    @media (max-width: 767px) {
+      .nav__item {
+        display: none; } }
+    .nav__item_delivery {
+      background: #f2e0e6;
+      padding: 10px 21px; }
+      .nav__item_delivery:hover {
+        background: #ffdae7; }
+
+.logo {
+  width: 256px; }
+
+.btn {
+  font-family: "PF Agora Sans Pro Regular";
+  font-size: 14px;
+  padding: 18px 63px;
+  max-width: 330px;
+  letter-spacing: 0.03em;
+  display: block;
+  border-radius: 61px;
+  color: #ffffff;
+  transition: 0.5s;
+  background: linear-gradient(30.04deg, #970d3c -29.86%, #93123e 26.2%, #c61a54 87.15%), #4d4d4d;
+  background-size: 100%;
+  background-position: 0; }
+  .btn:hover {
+    background-size: 300%;
+    background-position: 100%; }
+  @media (max-width: 767px) {
+    .btn {
+      padding: 18px 20px; } }
+
+.search {
+  position: relative;
+  height: 53px; }
+  .search input[type="search"]::-webkit-search-cancel-button {
+    display: none; }
+  .search__btn {
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding-right: 26px; }
+    .search__btn:hover .search__icon {
+      fill: #533934; }
+  .search__icon {
+    width: 16px;
+    height: 16px;
+    fill: #a9a9a9;
+    transition: 0.3s; }
+  .search__input {
+    height: 53px;
+    width: 549px;
+    max-width: 549px;
+    padding: 14px 26px;
+    border: 1px solid #e0e0e0;
+    border-radius: 83px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    font-family: "PF Agora Sans Pro Regular";
+    font-size: 17px;
+    color: #533934; }
+    @media (max-width: 991px) {
+      .search__input {
+        max-width: 220px; } }
+    @media (max-width: 767px) {
+      .search__input {
+        width: 100%;
+        min-width: 100%; } }
+    .search__input:focus {
+      border-color: #cccccc; }
+
+.title {
+  font-family: "Ozme";
+  font-size: 40px;
+  font-weight: 100; }
+
+.tx_muted {
+  color: #b8b8b8;
+  font-size: 15px;
+  font-family: "PF Agora Sans Pro Regular"; }
+
+.burger {
+  width: 60px;
+  border-radius: 20px;
+  padding: 5px 0px 2px;
+  background: linear-gradient(30.04deg, #b41b4f -29.86%, #b41b4f 27.42%, #df2665 87.15%); }
+  @media (min-width: 767px) {
+    .burger {
+      display: none; } }
+  .burger svg {
+    height: 25px;
+    width: 25px; }
+
+.basket__icon {
+  margin-right: 10px;
+  height: 32px; }
+
+.order {
+  color: #484848; }
+  .order__name {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: 0.3s; }
+    .order__name:hover {
+      text-decoration-color: #533934; }
+  .order__img {
+    width: 80px;
+    height: 78px;
+    object-fit: cover;
+    border-radius: 10px; }
+  .order__info {
+    margin-left: 24px;
+    margin-right: auto; }
+    .order__info a:visited {
+      color: inherit; }
+  .order__price {
+    white-space: nowrap;
+    margin-left: 3px; }
+
+.header {
+  font-size: 17px; }
+  .header__inner {
+    padding: 15px 0; }
+    @media (max-width: 1200px) {
+      .header__inner {
+        padding: 15px 10px; } }
+    @media (max-width: 991px) {
+      .header__inner {
+        max-width: 768px; } }
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 43px; }
+    @media (max-width: 767px) {
+      .header__bottom {
+        margin-top: 8px; } }
+
+@media (max-width: 767px) and (max-width: 767px) {
+  .header__bottom .header__item:nth-last-child(-n + 2) {
+    margin: 0 10px; } }
+  @media (max-width: 991px) {
+    .header__logo {
+      max-width: 160px; } }
+  @media (max-width: 767px) {
+    .header__logo {
+      display: none; } }
+  .header__link {
+    cursor: pointer; }
+    .header__link:visited {
+      color: #222222; }
+  @media (max-width: 991px) {
+    .header__profile-text {
+      display: none; } }
+  .header__profile-icon {
+    height: 20px;
+    width: 40px; }
+    @media (min-width: 991px) {
+      .header__profile-icon {
+        display: none; } }
+  .header__nav .nav__item:not(:last-child) {
+    margin-right: 36px; }
+    @media (max-width: 1200px) {
+      .header__nav .nav__item:not(:last-child) {
+        margin-right: 10px;
+        padding: 10px; } }
+  @media (max-width: 991px) {
+    .header__tel {
+      margin-left: 20px; } }
+  @media (min-width: 991px) {
+    .header__tel svg {
+      display: none; } }
+  .header__tel span {
+    margin-left: 15px;
+    font-size: 16px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(30.04deg, #b41b4f -29.86%, #b41b4f 27.42%, #df2665 87.15%);
+    position: relative;
+    background-size: 200% 100%, auto;
+    background-position: 100% 0, 0 0;
+    transition: 0.5s linear;
+    font-family: "PF Agora Sans Pro Regular"; }
+    @media (max-width: 991px) {
+      .header__tel span {
+        display: none; } }
+    .header__tel span::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(30.04deg, #b41b4f -29.86%, #b41b4f 27.42%, #df2665 87.15%);
+      position: absolute;
+      bottom: -2px; }
+    .header__tel span:hover {
+      background-position: -100% 0, 0 0; }
+  .header__btn {
+    display: flex;
+    padding: 14px 34px;
+    height: 53px;
+    width: 257px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    color: #ffffff;
+    font-family: "PF Agora Sans Pro Medium", sans-serif;
+    font-size: 17px;
+    background-image: linear-gradient(30.04deg, #b41b4f -29.86%, #b41b4f 27.42%, #df2665 87.15%);
+    background-size: 100% 100%;
+    transition: 0.5s linear;
+    cursor: pointer; }
+    .header__btn:hover {
+      background-size: 300% 100%; }
+    @media (max-width: 767px) {
+      .header__btn {
+        display: none; } }
+  .header__burger {
+    width: 26px;
+    height: 21px;
+    margin-right: auto; }
+  .header__favorites {
+    background: #fff5f9;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    display: block;
+    line-height: 42px;
+    text-align: center;
+    margin-left: 53px; }
+    @media (max-width: 1200px) {
+      .header__favorites {
+        margin: 0; } }
+  .header__icon {
+    height: 36px;
+    width: 36px; }
+  .header__basket {
+    display: flex;
+    color: #533934;
+    font-size: 17px;
+    line-height: 38px;
+    margin-left: 39px; }
+    @media (max-width: 1200px) {
+      .header__basket {
+        margin: 0; } }
+    .header__basket span {
+      line-height: 38px; }
+      @media (max-width: 767px) {
+        .header__basket span {
+          display: none; } }
+  .header__search {
+    margin-left: 60px; }
+    @media (max-width: 1200px) {
+      .header__search {
+        margin: 0; } }
+    @media (max-width: 767px) {
+      .header__search {
+        width: 100%; } }
+
+.receipt {
+  padding: 100px 0 200px;
+  color: #484848; }
+  @media (max-width: 767px) {
+    .receipt {
+      padding: 10px 0 20px; } }
+  .receipt__inner {
+    max-width: 619px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.2);
+    border-radius: 11px;
+    padding: 58px 44px 65px;
+    box-sizing: border-box; }
+    @media (max-width: 767px) {
+      .receipt__inner {
+        padding: 7px; } }
+  .receipt__top {
+    margin-bottom: 55px; }
+  .receipt__bottom {
+    max-width: 503px; }
+  .receipt__title {
+    margin-bottom: 30px; }
+  .receipt__post-title {
+    margin-bottom: 21px;
+    text-align: center; }
+  .receipt__order {
+    margin-bottom: 22px; }
+  .receipt__summ {
+    margin-bottom: 20px;
+    font-size: 15px; }
+
+/*# sourceMappingURL=maps/main.css.map */

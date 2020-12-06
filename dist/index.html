@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" display="none">
+
+    <symbol id="loupe" viewBox="0 0 16 16">
+        <path
+            d="M15.8041 14.8637L11.9576 11.0171C12.911 9.85469 13.4857 8.36571 13.4857 6.74286C13.4857 3.02041 10.4653 0 6.74286 0C3.01714 0 0 3.02041 0 6.74286C0 10.4653 3.01714 13.4857 6.74286 13.4857C8.36571 13.4857 9.85143 12.9143 11.0139 11.9608L14.8604 15.8041C15.1216 16.0653 15.5429 16.0653 15.8041 15.8041C16.0653 15.5461 16.0653 15.1216 15.8041 14.8637ZM6.74286 12.1437C3.76163 12.1437 1.33878 9.72082 1.33878 6.74286C1.33878 3.7649 3.76163 1.33878 6.74286 1.33878C9.72082 1.33878 12.1469 3.7649 12.1469 6.74286C12.1469 9.72082 9.72082 12.1437 6.74286 12.1437Z" />
+    </symbol>
+
+    <symbol id="burger" viewBox="0 0 27 22">
+        <rect width="26.2308" height="3.73303" rx="1.86652" fill="white" />
+        <rect y="17.4199" width="26.2308" height="3.73303" rx="1.86652" fill="white" />
+        <rect y="8.71094" width="26.2308" height="3.73303" rx="1.86652" fill="white" />
+    </symbol>
+
+    <symbol id="phone" viewBox="0 0 1280.000000 1170.000000">
+        <g transform="translate(0.000000,1170.000000) scale(0.100000,-0.100000)" fill="#b41b4f" stroke="none">
+            <path d="M2705 11686 c-22 -8 -90 -30 -152 -50 -141 -46 -389 -151 -553 -234
+-636 -323 -1154 -800 -1545 -1424 -97 -156 -273 -496 -350 -678 -82 -196 -96
+-258 -102 -470 -3 -109 0 -238 7 -315 6 -71 14 -195 16 -275 l5 -145 107 -224
+c159 -335 359 -738 447 -901 835 -1552 1991 -2970 3315 -4066 1043 -863 2169
+-1548 3440 -2091 577 -246 1327 -496 2020 -673 69 -17 197 -52 285 -76 156
+-43 166 -45 380 -55 453 -23 660 10 950 151 405 196 920 671 1269 1170 121
+172 242 369 287 466 89 192 214 674 251 964 16 132 16 551 0 680 -7 52 -17
+133 -23 180 -34 270 -106 408 -238 456 -115 42 -510 27 -1491 -56 -1285 -110
+-1824 -164 -1959 -197 -113 -27 -177 -154 -220 -436 -12 -75 -21 -166 -21
+-204 -2 -275 -81 -432 -242 -474 -45 -12 -48 -12 -143 34 -164 79 -334 199
+-840 591 -685 530 -2165 1721 -3460 2785 -986 810 -1219 1017 -1244 1107 -16
+59 3 116 62 181 94 102 257 195 595 339 203 86 494 228 567 276 63 41 105 118
+105 190 0 95 -91 396 -280 928 -28 80 -64 181 -80 225 -32 92 -108 302 -179
+503 -27 75 -88 242 -135 370 -47 129 -125 342 -172 475 -84 235 -135 364 -263
+667 -85 199 -122 252 -206 291 -55 25 -159 32 -210 15z" />
+        </g>
+    </symbol>
+
+    <symbol id="home" viewBox="0 0 1280.000000 720.000000">
+        <g transform="translate(0.000000,720.000000) scale(0.100000,-0.100000)" fill="#b41b4f" stroke="none">
+            <path d="M6250 6449 c-122 -87 -203 -145 -345 -244 -38 -27 -115 -81 -170
+        -120 -161 -115 -1335 -945 -1395 -987 -30 -21 -86 -60 -125 -88 -38 -28 -108
+        -77 -155 -110 -47 -33 -119 -83 -160 -113 -41 -29 -106 -75 -145 -102 -245
+        -171 -454 -321 -478 -344 -15 -14 -42 -48 -60 -76 -31 -48 -32 -53 -32 -155 0
+        -71 5 -113 14 -130 36 -63 160 -226 195 -256 51 -44 133 -74 200 -74 64 0 30
+        -22 611 390 220 156 508 360 640 453 344 244 450 319 535 379 118 82 240 168
+        301 213 31 22 87 62 125 88 38 27 128 90 199 140 72 51 190 134 262 186 l133
+        93 63 -44 c162 -110 225 -154 263 -182 22 -17 103 -75 180 -129 76 -54 400
+        -282 719 -508 319 -225 674 -476 788 -557 115 -81 234 -165 265 -188 31 -22
+        104 -73 162 -114 58 -41 141 -100 185 -131 110 -79 132 -89 195 -89 40 0 71 8
+        115 29 67 32 107 71 187 181 99 137 98 135 98 252 0 98 -2 107 -29 149 -42 65
+        -87 103 -281 239 -431 303 -588 416 -628 454 -51 48 -112 147 -144 231 -22 59
+        -22 73 -28 590 -5 489 -6 533 -24 567 -32 66 -93 125 -164 160 l-66 33 -182 3
+        c-144 3 -193 0 -237 -13 -107 -31 -190 -106 -228 -205 -16 -43 -19 -78 -19
+        -240 0 -196 -7 -238 -43 -269 -27 -22 -80 -5 -165 53 -42 29 -275 193 -517
+        365 -309 219 -447 311 -465 310 -15 0 -75 -36 -150 -90z" />
+            <path d="M6287 5118 c-141 -97 -151 -104 -452 -317 -143 -102 -390 -277 -550
+        -390 -159 -112 -351 -248 -425 -300 -74 -53 -153 -108 -175 -123 -22 -15 -70
+        -49 -106 -75 -37 -27 -107 -76 -157 -111 -49 -34 -102 -74 -116 -87 l-26 -24
+        0 -1243 c0 -819 4 -1265 11 -1308 16 -99 69 -199 150 -285 80 -84 139 -125
+        240 -166 l71 -29 542 0 c408 0 545 3 554 12 9 9 12 182 12 718 0 388 4 711 8
+        718 7 10 121 12 538 10 l529 -3 3 -714 c1 -507 5 -718 13 -728 9 -11 112 -13
+        554 -13 l543 0 70 29 c141 57 220 117 299 228 24 34 56 90 71 125 l27 63 3
+        1297 2 1296 -41 34 c-23 18 -59 44 -80 58 -20 14 -72 50 -116 81 -43 30 -118
+        84 -168 119 -49 35 -122 87 -161 114 -40 28 -123 87 -185 130 -63 44 -359 254
+        -659 466 -664 470 -673 477 -698 484 -14 5 -49 -14 -125 -66z" />
+        </g>
+    </symbol>
+
+</svg>
+
+    <header class="header">
+
+	<div class="header__inner container">
+		<div class="header__top">
+			<button class="burger">
+				<svg>
+					<use xlink:href='#burger' />
+				</svg>
+			</button>
+			<a class="header__item" href="#">
+				<img class="header__logo logo" src="./img/logo.svg" alt="">
+			</a>
+			<nav class="header__item">
+				<ul class="nav header__nav">
+					<li class="nav__item nav__item_delivery">
+						<a class="nav__link" href="#"></a> Доставка
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#"></a> Контакты
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#"></a> О нас
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#"></a> Отзывы
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#"></a> Блог
+					</li>
+				</ul>
+			</nav>
+			<div class="header__item">
+				<a href="#" class="header__link">
+					<span class="header__profile-text">Профиль</span>
+				</a>
+				<a href="#" class="header__link">
+					<svg class="header__profile-icon">
+						<use xlink:href='#home' />
+					</svg>
+				</a>
+				<a class="header__tel" href="tel:+73812660888">
+					<span>8 (3812) 660-888</span>
+				</a>
+				<a class="header__tel" href="tel:+73812660888">
+					<svg class="header__profile-icon">
+						<use xlink:href='#phone' />
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<button class="header__item header__btn btn">
+				<svg class="header__burger">
+					<use xlink:href='#burger' />
+				</svg>
+				<span class="btn__text_little">Каталог товаров</span>
+			</button>
+			<form class="header__item header__search search">
+				<input class="search__input" type="search" placeholder="Я ищу...">
+				<button class="search__btn" type="submit">
+					<svg class="search__icon">
+						<use xlink:href='#loupe' />
+					</svg>
+				</button>
+			</form>
+			<div class="header__item">
+				<a class="header__favorites favorites" href="#">
+					<img class="favorites__icon" src="img/favorits.svg" alt="">
+				</a>
+			</div>
+			<div class="header__item">
+				<a class="header__basket basket" href="#">
+					<img class="basket__icon" src="img/basket.svg" alt="">
+					<span>
+						Корзина
+					</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	</div>
+
+</header>
+    <section class="receipt">
+    <div class="container">
+        <div class="receipt__inner">
+            <div class="receipt__top col col_ctr">
+                <h1 class="receipt__title title">Ваш заказ оплачен</h1>
+                <p class="receipt__post-title tx_muted">
+                    <span class="username">Дмитрий</span>, спасибо, что выбрали интернет-магазин “Цветы у Яблоньки”
+                </p>
+                <a href="#" class="btn">ПЕРЕЙТИ В ЛИЧНЫЙ КАБИНЕТ</a>
+            </div>
+            <div class="receipt__bottom">
+                <div class="receipt__summ">
+                    Сумма заказа:
+                    <span class="receipt__price">23 425 руб.</span>
+                </div>
+                <div class="order receipt__order row">
+                    <a href="#">
+                        <img src="img/1.jpg" alt="" class="order__img">
+                    </a>
+                    <div class="order__info col">
+                        <a href="#">
+                            <div class="order__name">Авторский букет «Лолита»</div>
+                        </a>
+                        <div class="order__quantity">
+                            <span class="tx_muted">Количество:</span>
+                            1
+                        </div>
+                    </div>
+                    <div class="order__price">1 095 руб.</div>
+                </div>
+                <div class="order receipt__order row">
+                    <a href="#">
+                        <img src="img/2.jpg" alt="" class="order__img">
+                    </a>
+                    <div class="order__info col">
+                        <a href="#">
+                            <div class="order__name">Гортензия Голубая</div>
+                        </a>
+                        <div class="order__quantity">
+                            <span class="tx_muted">Количество:</span>
+                            2
+                        </div>
+                    </div>
+                    <div class="order__price">7 990 руб.</div>
+                </div>
+                <div class="order receipt__order row">
+                    <a href="#">
+                        <img src="img/3.jpg" alt="" class="order__img">
+                    </a>
+                    <div class="order__info col">
+                        <a href="#">
+                            <div class="order__name">Красные розы Prestige</div>
+                        </a>
+                        <div class="order__quantity">
+                            <span class="tx_muted">Количество:</span>
+                            5
+                        </div>
+                    </div>
+                    <div class="order__price">13 990 руб.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- User scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
